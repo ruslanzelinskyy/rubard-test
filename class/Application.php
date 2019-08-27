@@ -76,10 +76,10 @@ class Application extends Config {
                     if (!empty($field['value'])) {
                         if(strlen($field['value']) <= 64) {
                             if(ctype_digit ($field['value'])) {
-                                $errors['phone'] = 'only_chars';
+                                $errors['name'] = 'only_chars';
                             }
                         } else {
-                            $errors['phone'] = 'wrong_length';
+                            $errors['name'] = 'wrong_length';
                         }
                     } else {
                         $errors['name'] = 'required_field';
